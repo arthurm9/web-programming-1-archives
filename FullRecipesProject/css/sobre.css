@@ -1,0 +1,10 @@
+body {
+    background-color:snow;
+    background-size: 100%;
+    font-family: Cambria;
+}
+
+.container {
+    padding-left: 8%;
+    padding-right: 8%;
+}

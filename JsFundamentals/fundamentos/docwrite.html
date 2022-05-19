@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body id="site">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <input type="button" value="Olá" onclick="ola();">
+    <br>
+
+    <input type="button" value="Acessar" onclick="ola1('Arthur');">
+    <br>
+    <script>
+        // document.write escreve na página diretamente do script.
+        document.write('<h2 class="text-center">Escrevendo no documento com document.write <h2>'); // A propriedade document write permite também inserir tags nos textos.
+    // ------------------------------------------------------------------------------------------------------------------------------------------//
+        // Listagem de números de 1 a 10 exibindo na página.
+        for(x=0; x<=10; x++){
+            document.write("<div class='text-center' style='color:blue'>", x);
+            document.write("</div>");
+        }
+    // ------------------------------------------------------------------------------------------------------------------------------------------//
+        function ola(){
+            document.write('<h2 class="text-center"> Olá, bem vindo ao site! </h2>');
+        }
+    // ------------------------------------------------------------------------------------------------------------------------------------------//
+        function ola1(user){
+            document.write("Olá, ", user);
+            document.write("<hr> Site Liberado!!!!");
+        }
+    // ------------------------------------------------------------------------------------------------------------------------------------------//
+    </script>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

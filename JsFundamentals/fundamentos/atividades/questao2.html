@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body id="site">
+
+    <h2 id='titulo'>Bem vindo!</h2>
+
+    <input type="button" value="Página Azul" onclick="pagina1();" >
+    <input type="button" value="Página Verde" onclick="pagina2();" >
+    <input type="button" value="Página Vermelho" onclick="pagina3();" >
+    <input type="button" value="Página Roxo" onclick="pagina4();" >
+    <input type="button" value="Página Amarelo" onclick="pagina5();" >
+    <br>
+    <input type="button" value="Texto Marrom" onclick="titulo1();" >
+    <input type="button" value="Texto Rosa" onclick="titulo2();" >
+    <input type="button" value="Texto Cinza" onclick="titulo3();" >
+    <input type="button" value="Texto Branco" onclick="titulo4();" >
+    <input type="button" value="Texto Preto" onclick="titulo5();" >
+
+
+    <script>
+        
+        function pagina1(){
+            var no = document.getElementById("site");
+            no.style.backgroundColor = '#0E1DEC';
+        }
+
+        function pagina2(){
+            var no = document.getElementById("site");
+            no.style.backgroundColor = '#038811';
+        }
+
+        function pagina3(){
+            var no = document.getElementById("site");
+            no.style.backgroundColor = '#B50202';
+        }
+
+        function pagina4(){
+            var no = document.getElementById("site");
+            no.style.backgroundColor = '#7C0CCD';
+        }
+
+        function pagina5(){
+            var no = document.getElementById("site");
+            no.style.backgroundColor = '#EACF08';
+        }
+
+        function titulo1(){
+            var no = document.getElementById("titulo");
+            no.style.color = '#412C04';
+        }
+
+        function titulo2(){
+            var no = document.getElementById("titulo");
+            no.style.color  = '#DB1BF4';
+        }
+
+        function titulo3(){
+            var no = document.getElementById("titulo");
+            no.style.color  = '#747274';
+        }
+
+        function titulo4(){
+            var no = document.getElementById("titulo");
+            no.style.color  = '#FCFCFC';
+        }
+
+        function titulo5(){
+            var no = document.getElementById("titulo");
+            no.style.color  = '#000000';
+        }
+
+    </script>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

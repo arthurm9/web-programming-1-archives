@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Bootstrap</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+</head>
+
+<body class="bg-secondary">
+        <div class="container-fluid">
+            <div class="row bg-dark text-white"> 
+    
+                <div class="col">
+                    <h1 class="text-center">RECEITAS</h1>
+                </div>
+            </div>
+        </div> <!-- fim do primeiro container -->
+    
+        <div class="container mt-3 bg-light"> <!-- 'mt-3' define a margin-top para o valor 3 -->
+            <div class="row py-3">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills"> <!-- 'flex-colum' deixa os elementos um embaixo do outro -->
+                        <a href="/index.html" class="nav-link">Página Inicial</a> <!-- 'nav-link active' mostra qual link está selecionado-->
+                        <a href="#" class="nav-link active">Salgadas</a>
+                        <a href="#" class="nav-link">Doces</a>
+                        <a href="#" class="nav-link">Sobre</a>
+                    </div>
+                </div> <!-- fim da primeira col-3 (menu nav)-->
+    
+                <div class="col-9">
+                    <h3 class="text-center">MAIS ACESSADAS</h3>
+                    
+                    <div class="row">
+                        <div class="col">
+                          <div class="card">
+                            <img class="card-img-top" src="https://i0.wp.com/3talheres.com.br/wp-content/uploads/2020/04/Aprenda-dicas-para-molhos-deliciosos-e-fa%C3%A7a-Rondelli-4-Queijos.jpg?fit=850%2C600&ssl=1" alt="...">
+                            <div class="card-body">
+                              <h2 class="card-title">RONDELLI 4 QUEIJOS</h2>
+                              <p class="card-text">Aprenda a fazer esse delicioso Rondelli de 4 Queijos!</p>
+                              <hr>
+                              <h5 class="card-title">INGREDIENTES</h5>
+                                <li>200 g de queijo mussarela.</li>
+                                <li>300 g de ricota.</li>
+                                <li>400 g de requeijão (bisnaga).</li>
+                                <li>250 g de queijo gorgonzola.</li>
+                                <li>50 g de queijo parmesão para polvilhar.</li>
+                                <li>500 g de massa de pastel (em rolo).</li>
+                                <li>molho de tomate da sua preferência, nesta receita usei um saquinho de molho pronto.</li>
+                              </ul>
+                              <hr>
+                              <h5 class="card-title">MODO DE PREPARO</h5>
+                              <ol>
+                                <li>Rale a mussarela, a ricota e o gorgonzola misturando o requeijão até obter uma pasta.</li>
+                                <li>Abra a massa de pastel.</li>
+                                <li>Coloque a pasta de queijos em cerca de 60 cm de massa (essa quantidade da receita é suficiente pra 2 ou 3 rocamboles, dependendo a quantidade de recheio).</li>
+                                <li>Enrole e pincele água no final para não abrir.</li>
+                                <li>Corte o rocambole em fatias de cerca de 2 cm.</li>
+                                <li>Coloque o molho em uma assadeira, deixando cerca de 0,5 cm de massa pra cima do molho.</li>
+                                <li>Cubra com papel alumínio e leve ao forno médio (180ºC) por 40 minutos.</li>
+                                <li>Retire o papel alumínio, polvilhe queijo parmesão e volte ao forno por mais 10 minutos.</li>
+                              </ol>
+                              <hr>
+                              <a href="../index.html" class="btn btn-primary">Voltar ao Início</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- fim do container mt-3-->
+    
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    
+</body>
+
+</html>

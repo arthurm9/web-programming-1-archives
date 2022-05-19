@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> Aula de JavaScript </title>
+<style type="text/css">
+.formato01{
+	width: 200px;
+	height: 200px;
+	border: #ff0000 2px Solid;
+	background: #00ff00;
+}
+.formato02{
+	width: 200px;
+	height: 200px;
+	border: #00ff00 2px Solid;
+	background: #ff0000;
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+function muda(){
+    classe = document.getElementById('janela').className; 
+    if(classe == 'formato01'){
+       document.getElementById('janela').className = 'formato02';
+   }else{
+       document.getElementById('janela').className = 'formato01';
+   }
+}
+</script>
+</head>
+<body>
+<div class="formato01" id="janela">Janela de dados </div>
+<input type="button" value="Mudar CSS" onclick="muda();" >
+</body>
+</html>

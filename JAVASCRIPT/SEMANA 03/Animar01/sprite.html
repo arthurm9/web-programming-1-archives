@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>L03Ex03</title>
+
+<script type="text/javascript" src="core.js"></script>
+
+    <style type="text/css">
+        #robo {
+            height: 100px;
+            width: 75px;
+            background-image: url(zombie.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var robo = {
+            init: function () {
+                robo.div = document.getElementById("robo");
+                robo.frameWidth = 75;
+                robo.frames = 7;
+                robo.offsetX = 0;
+
+                robo.animar();
+            },
+            animar: function () {
+                robo.offsetX -= robo.frameWidth;
+
+                if (robo.offsetX <= -robo.frameWidth * robo.frames) {
+                    robo.offsetX = 0;
+                }
+                robo.div.style.backgroundPosition = robo.offsetX + " 0px";
+                setTimeout(robo.animar, 200);
+            }
+        };
+        Core.start(robo);
+    </script>
+</head>
+<body>
+<div id="robo"></div>
+</body>
+</html>

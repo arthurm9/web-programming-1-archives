@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> Aula de JavaScript </title>
+</head>
+<body>
+<style type="text/css">
+.formato01 {
+	border: 1px solid #CCC;
+	padding: 10px 5px 6px 5px;
+	background-color: #E4E4E4;
+	color: #666;
+}
+.formato02{
+	background-color:#F1D59E;
+	border: #F2BE84 5px solid;
+	color: #666;
+	font-family: "Lucida Sans Unicode", Verdana, Arial, Georgia;
+	font-size: 12px;
+	width:200px;
+	padding:10px;
+}
+</style>
+<script language="javascript">
+function mudar() {
+var elemento = document.getElementById('janela');
+	if (elemento.className == "formato01") {
+		elemento.className = "formato02";
+	}
+	else {
+		elemento.className = "formato01";
+	}
+}
+</script>
+</head>
+<body>
+<p><a href="javascript:mudar()">Mudar</a></p>
+
+
+<div id="janela" class="formato01">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus
+mollis. Etiam aliquet. Ut ultrices justo ut arcu. Proin a purus. Fusce
+pharetra ultrices nibh. Nam erat lectus, dapibus id, congue vel, cursus
+a, tellus. Sed turpis ante, condimentum at, accumsan eget, pulvinar
+vitae, nibh. </p>
+</div>
+</body></html>

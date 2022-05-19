@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> Aula de JavaScript </title>
+<script type="text/javascript" src="core.js"></script>
+<style type="text/css">
+#robo { 
+	height: 121px; 
+	width: 121px; 
+	background-image: url(robo_head.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+</style>
+<script type="text/javascript">
+var robo = {
+	init: function()
+	{
+		robo.div = document.getElementById("robo");
+		robo.frameHeight = 121;
+		robo.frames = 6;
+		robo.offsetY = 0;
+
+		robo.animar();
+	},	
+	animar: function(){
+		robo.offsetY -= robo.frameHeight;
+		if (robo.offsetY <= -robo.frameHeight * robo.frames){
+			robo.offsetY = 0;
+		}
+	robo.div.style.backgroundPosition = "0 " + robo.offsetY + "px";
+	setTimeout(robo.animar, 75);
+	}
+};
+Core.start(robo);
+</script>
+</head>
+<body>
+<div id="robo"></div>
+</body>
+</html>

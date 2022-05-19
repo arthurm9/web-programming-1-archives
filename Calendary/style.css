@@ -1,0 +1,78 @@
+body {
+  background-image: url("https://images3.alphacoders.com/690/thumb-1920-690801.jpg");
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+    justify-content: center;
+    margin-bottom: 2em;
+    background: #000;
+    color: #fff;
+    min-height: 10vh;
+    text-align: center;
+  }
+  
+  ul, ol {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1em;
+    margin: 0 auto;
+    max-width: 64em;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-left: 0;
+    font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  }
+  
+  ul.weekdays {
+    margin-bottom: 1em;
+  }
+  
+  ul.weekdays li {
+    height: 4vw;
+  }
+  
+  ol.day-grid li {
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    height: 12vw;
+    max-height: 125px;
+  }
+  
+  ul.weekdays abbr[title] {
+    border: none;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  
+  ol.day-grid li:nth-child(1),
+  ol.day-grid li:nth-child(2),
+  ol.day-grid li:nth-child(3),
+  ol.day-grid li:nth-child(34),
+  ol.day-grid li:nth-child(35) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  @media all and (max-width: 800px) {
+    ul, ol {
+      grid-gap: .25em;
+    }
+    
+    ul.weekdays li {
+      font-size: 0;
+    }
+    
+    ul.weekdays > li abbr:after {
+        content: attr(title);
+        font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+      text-align: center;
+      }
+  }

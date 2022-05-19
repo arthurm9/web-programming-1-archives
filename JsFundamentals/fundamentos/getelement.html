@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body id="site">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <h2 id='titulo'>Minha Página Com Javascript</h2>
+    <h3 id='titulo1'>Olá, seja bem vindo!</h3>
+    <h3 id='titulo2'>Como vai seu dia?</h3>
+
+    <input type="button" value="Cor Título" onclick="elemento2()"> <!-- O botão altera a cor do H3. -->
+
+    <h3 id="titulo3">Feliz e próspero final de ano!</h3>
+    
+    <input type="button" value="Cor Título" onclick="elemento3();" >
+    <input type="button" value="Cor de Fundo" onclick="fundo();" >
+    <input type="button" value="Cor da Página" onclick="pagina();" >
+
+    <script>
+        function elemento(){
+         // nó
+        var no = document.getElementById("titulo"); // Como o nome diz ele pega o elemento pelo id dele.
+            alert(no.nodeName); // retorno do alert() = H2
+            no.style.color = '#000080'  // Altera a cor do h2.
+        }
+        elemento()
+    // ------------------------------------------------------------------------------------------------------------------------------------------//
+        function elemento1(){
+            var no1 = document.getElementById("titulo1");
+            no1.style.color = '#FF0000'; // Altera a cor de h3.
+        }
+        elemento1()
+    // ------------------------------------------------------------------------------------------------------------------------------------------//
+        function elemento2(){
+            var no2 = document.getElementById("titulo2");
+            no2.style.color = '#00FF00'; 
+        }   
+    // ------------------------------------------------------------------------------------------------------------------------------------------//
+        function elemento3(){
+            var no3 = document.getElementById("titulo3");
+            no3.style.color = '#F5FFFA';
+        }
+        function fundo(){
+            var no3 = document.getElementById("titulo3");
+            no3.style.backgroundColor = '#A52A2A';
+        }
+        function pagina(){
+            var no3 = document.getElementById("site");
+            no3.style.backgroundColor = '#F0FFF0';
+        }
+    </script>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-secondary">
+    <div class="container-fluid">
+        <div class="row bg-dark text-white"> 
+
+            <div class="col">
+                <h1 class="text-center">RECEITAS</h1>
+            </div>
+        </div>
+    </div> <!-- fim do primeiro container -->
+
+    <div class="container mt-3 bg-light"> <!-- 'mt-3' define a margin-top para o valor 3 -->
+        <div class="row py-3">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills"> <!-- 'flex-colum' deixa os elementos um embaixo do outro -->
+                    <a href="/index.html" class="nav-link active">Página Inicial</a> <!-- 'nav-link active' mostra qual link está selecionado-->
+                    <a href="#" class="nav-link">Salgadas</a>
+                    <a href="#" class="nav-link">Doces</a>
+                    <a href="#" class="nav-link">Sobre</a>
+                </div>
+            </div> <!-- fim da primeira col-3 (menu nav)-->
+
+            <div class="col-9">
+                <h3 class="text-center">MAIS ACESSADAS</h3>
+                
+                <div class="row py-3">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://i0.wp.com/3talheres.com.br/wp-content/uploads/2020/04/Aprenda-dicas-para-molhos-deliciosos-e-fa%C3%A7a-Rondelli-4-Queijos.jpg?fit=850%2C600&ssl=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Rondelli 4 Queijos</h5>
+                              <p class="card-text">  Surpreenda ao preparar um prato fácil com um sabor incrível! Esse rondelli 4 queijos é prático e simples.</p>
+                              <a href="/receitas/rondelli.html" class="btn btn-link btn-block">SAIBA MAIS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://d1uz88p17r663j.cloudfront.net/original/8fee36bf950557ff9f896b9104f36907_bolo-vulcao-brigadeiro-receitas-nestle.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Bolo de Chocolate</h5>
+                              <p class="card-text">Não se deixe enganar pela simplicidade desta receita de bolo de chocolate, apesar de fácil de preparar é deliciosa!</p>
+                              <a href="/receitas/bolo.html" class="btn btn-link btn-block">SAIBA MAIS</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://cdn.panelinha.com.br/receita/1543943903839-pa%CC%83o%20de%20queijo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Pão de Queijo</h5>
+                              <p class="card-text">Redondinho e bem dourado, com a casquinha crocante e o miolo levemente puxa-puxa e sabor marcante de queijo. </p>
+                              <a href="/receitas/paodqueijo.html" class="btn btn-link btn-block">SAIBA MAIS</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- fim do container mt-3-->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

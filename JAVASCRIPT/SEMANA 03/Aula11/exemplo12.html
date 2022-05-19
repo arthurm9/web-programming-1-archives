@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Aula de JavaScript </title>
+</head>
+<body>
+<script language="javascript">
+function mudar(id) {
+        var display = document.getElementById(id).style.display;
+        if(display == "none")
+            document.getElementById(id).style.display = 'block';
+        else
+            document.getElementById(id).style.display = 'none';
+    }
+</script>
+</head>
+<body>
+<p><a href="javascript:mudar('janela')">Ver ou Não Ver, esta é a questão !!!!</a></p>
+<div id="janela">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus
+mollis. Etiam aliquet. Ut ultrices justo ut arcu. Proin a purus. Fusce
+pharetra ultrices nibh. Nam erat lectus, dapibus id, congue vel, cursus
+a, tellus. Sed turpis ante, condimentum at, accumsan eget, pulvinar
+vitae, nibh. </p>
+</div>
+</body>
+</html>

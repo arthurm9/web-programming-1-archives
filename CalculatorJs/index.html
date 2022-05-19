@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.ccs">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <style type="text/css">
+        body{
+           background: gray url(Image/mosaico.jpg) repeat;
+        }
+        </style>
+
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+
+        <script>
+        //alert("Ola mundo");
+            function calc(e){
+                var operacao = e.value;
+                var n1=parseFloat(document.getElementById("n1").value);
+                var n2=parseFloat(document.getElementById("n2").value);
+   
+                var calculo = eval(n1+operacao+n2);
+
+            if(!isNaN(calculo)){
+                alert(calculo);
+            }
+  
+            }
+
+            function ola(x){
+                var f=document.getElementById("frm");
+                var txt = f.txtnome;
+                txt.value = "Ola "+txt.value;
+            }
+
+            function limpar(){
+            //alert("1");
+                var f=document.getElementById("frm");
+                var n1 = f.n1;
+                var n2 = f.n2;
+                n1.value = "";
+                n2.value = "";
+            }
+        </script>
+
+    <form id="frm"  >
+        <div id="container">
+            <div id="topo"> 
+                <h1>Aula de Web</h1>
+            </div>
+            <div id="menu">
+            </div>
+            <div id="left">
+                <div class="bloco">
+                    <span>Nome:</span>
+                    <input type="text" name="txtnome" placeholder="Introduza o seu nome">
+                    <input id="enviar" type="button" value="Enviar" onClick="ola('Ola')">
+                  </div>
+                <div class="bloco1">
+                    <span>Introduza os numeros:</span><br>
+                    <input type="text" size="2" id="n1" placeholder="n1"><br>
+                    <input type="text" size="2"  id="n2" placeholder="n2"><br><br>
+                    <input type="button" value="+" onClick="calc(this)">
+                    <input type="button" value="-" onClick="calc(this)">
+                    <input type="button" value="*" onClick="calc(this)">
+                    <input type="button" value="/" onClick="calc(this)">
+                    <br><br>
+                    <input type="button" value="Limpar" onClick="limpar()"/>
+                    <input type="button" value="Enviar" onClick="ola('Ola')">
+                  </div>
+            </div>
+            <div id="right">
+                <img id="mario1" src="Image/mario1.jpg" alt=""/>
+                <img id="mario2" src="Image/mario2.jpg" alt=""/>      
+               </div>
+            <div id="bottom"></div>   
+        </div>
+    </form>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

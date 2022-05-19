@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="bg-dark">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* Função é um trecho do código que necessita ser chamada para entrar em execução.
+
+            function nomedafuncao(){
+                código da função
+            }
+
+        Exemplo: */
+
+        function ola(){
+            alert("Exibindo uma mensagem de alerta.");
+        }
+        ola(); // Chamando a função;
+
+        // Definindo argumentos:
+
+        function soma(x, y){
+            var total = x + y; // Aloca em uma variável
+            alert(total);
+        }
+        soma(10,5); // Os valores 10 e 5 são passados como argumentos para x e y (parâmetros).
+
+        // Retornando a soma:
+
+        function soma(x, y){
+            var total = x + y;
+            return total; // Retorna o resultado;
+        }
+        alert(soma(10,15)); // A instrução 'alert()' aguarda o resultado da função soma()
+
+        // Retornando sem guardar o resultado numa outra variável:
+
+        function soma(x, y){
+            return x + y;;
+        }
+        alert(soma(15,25));
+
+    </script>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

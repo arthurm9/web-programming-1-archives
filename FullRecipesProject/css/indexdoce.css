@@ -1,0 +1,61 @@
+body {
+    background-color:snow;
+    background-size: 100%;
+    font-family: Cambria;
+}
+
+.container {
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
+.titulo {
+    color:white;
+    background-color:darkorange;
+    text-align: center;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+.subtitulo {
+    font-size: medium;
+    color: rgb(63, 63, 63);
+}
+
+.subtitulo1 {    
+    color:black ;
+}
+
+li {
+    color: white;
+}
+
+.a {
+    font-size: large;
+    background-color: darkorange;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style:groove;
+}
+
+.img-brigadeiro {
+    width: 230px;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: darkorange;
+}
+
+.text-center {
+    text-align: left;
+}
+
+.voltar {
+    background-color: darkorange;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style:groove; 
+    margin-top: 15.2%;
+}

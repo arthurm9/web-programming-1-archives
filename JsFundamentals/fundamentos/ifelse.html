@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="bg-dark">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Estrutura condicional mais usada:
+        
+         /*     if (condição){
+                    código
+                } 
+        
+        Exemplo: */
+
+        var idade = 18;
+        if (idade >= 18){
+            alert('Acesso liberado, Você tem mais que 18 anos.');
+        }
+
+        // Alternativa à condição:
+
+        var idade = 15;
+        if (idade >= 18){
+            alert('Acesso liberado!');
+        } else{
+            alert('Acesso bloqueado!');
+        }       
+
+        // Múltiplas condições:
+
+        var codigo = 20;
+        if(codigo == 10){
+            alert('Olá, administrador.');
+        } else if (codigo == 20 ){ // "senão se"
+            alert('Olá, operador.');
+        } else if (codigo == 30 ){
+            alert('Olá, visitante.');
+        } else{
+            alert('Código inválido.');
+        }
+
+    </script>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
